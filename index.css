@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+
 body {
     height: 100vh;
     width: 100vw;
@@ -10,44 +11,51 @@ body {
     margin-right: 10px;
 
 }
-.main {
+
+.title {
     height: 100%;
     width: 100%;
     background-image: url(images/image1.jpg);
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
-   
+
 }
+
 .nevbar {
     display: flex;
     justify-content: space-between;
 }
-.nevbar ul li{
+
+.nevbar ul li {
     display: inline;
     margin-left: 50px;
 }
+
 .nevattribute {
     text-decoration: none;
     font-size: 30px;
     background-color: transparent;
     color: whitesmoke;
 }
+
 .nevattribute:hover {
     transition: 0.5s;
     font-size: 80px;
-     color: white;
-   
+    color: white;
+
 }
+
 .login {
     margin-right: 100px;
     font-size: x-large;
     width: 100px;
-    height: fit-content;   
-    background-color:  rgb(253, 215, 215); 
+    height: fit-content;
+    background-color: rgb(253, 215, 215);
     color: black;
     border-radius: 10px;
     cursor: pointer;
 }
+
 .login:hover {
     background-color: #FF4500;
 }
@@ -60,7 +68,7 @@ body {
     justify-content: center;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .circle {
@@ -73,7 +81,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-size: medium;
-    
+
 }
 
 .circle1 {
@@ -81,29 +89,298 @@ body {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    
+
 }
-.im1{
+
+.im1 {
     height: 150px;
-    width: 150px; 
+    width: 150px;
     border-radius: 50%;
 }
+
 .h {
     margin: 10px;
-   
+    width: 100%;
+
 }
 
 
-.carousel-item{
+.carousel-item {
     height: 600px;
     width: 100%;
     background-size: cover;
     border: 1px solid black(0.2);
+
+}
+
+.h1 {
+    margin-left: 30px;
+}
+
+
+.row .col {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 400px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 20px;
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+.footer {
+    padding: 20px;
+    bottom: 0;
+}
+@media (max-width: 1149px) {
+
+    .circle {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid none;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: medium;
+    }
+
+    .circle1 {
+        margin: 10px;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .im1 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .h {
+        margin: 10px;
+
+    }
+
+    .menu {
+        margin-top: 20px;
+        height: 250px;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 930px) {
+
+    .circle {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid none;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .circle1 {
+        margin: 10px;
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+    }
+
+    .im1 {
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+    }
+
+    .h {
+        margin: 10px;
+
+    }
+
+    .menu {
+        margin-top: 20px;
+        height: 200px;
+        width: 100%;
+
+    }
+    .black {
+        visibility: hidden;
+    }
+    .nevattribute {
+        font-size: 25px;
+        
+    }
     
 }
-.card-img-top {
-    border: 2px solid black;
-    height: 360px;
-    width: 360px;
-    border-radius: 10px;
+
+
+@media (max-width: 767px) {
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .circle {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid none;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: xx-small;
+    }
+
+    .circle1 {
+        margin: 10px;
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+    }
+
+    .im1 {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+
+    .h {
+        margin: 10px;
+
+    }
+
+    .menu {
+        margin-top: 20px;
+        height: 130px;
+        width: 100%;
+
+    }
+    .black {
+        visibility: hidden;
+    }
+    .nevattribute {
+        font-size: 15px;
+        
+    }
+    .login {
+        margin-right: 100px;
+        font-size: large;
+        width: 60px;
+    }
 }
+
+
+@media (max-width: 576px) {
+    .row .col {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .circle {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid none;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 8px;
+    }
+
+    .circle1 {
+        margin: 10px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
+
+    .im1 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .h {
+        margin: 10px;
+
+    }
+
+    .menu {
+        margin-top: 20px;
+        height: 80px;
+        width: 100%;
+    }
+    #hot {
+        margin-top: 15px;
+    }
+    .nevattribute {
+        font-size: 8px;
+    }
+    .login {
+        margin-right: 100px;
+        font-size: small;
+        width: 40px;
+    }
+}
+
